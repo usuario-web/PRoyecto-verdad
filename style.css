@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@function texto3d($numero,$color){
+    $text-shadow: 1px 1px darken($color,20%);
+    @for $i from 1 through $numero{
+        $text-shadow: "#{$text-shadow},#{$i}px #{$i}px #{$color}";
+    }
+    @return unquote($text-shadow);
+}
+@import "https://fonts.googleapis.com/css?family= Lobster & display = swap";
+header {
+    display:flex;
+    justify-content: center;
+    font-family: "Lobster", cursive;
+}
+
+h1{
+    margin: 0;
+    font-size: 4em;
+    text-align: center;
+    color: darkorange;
+    font-weight: normal;
+    background: linear-gradient(
+        yellow,
+          green
+        );
+}
+h2{ 
+    display: unset;
+    justify-content: initial;
+    font-family: 'Hanalei Fill', cursive;
+    margin: 1;
+    align-items: initial;
+    font-size: xx-large;
+    font-weight:normal;
+    text-decoration: solid;
+    text-align: inherit;
+    color: rgba(252, 188, 27, 0.945);
+    background: linear-gradient(
+            darkblue,
+            grey
+    );
+}
+h3{
+    margin : 0 ; 
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    justify-content: start;
+    align-items: initial;
+    height: 0vmax;
+    background: white;
+}
+
+.texto3d {
+     font-size: 5em;
+     color:#eee;
+     text-shadow: texto3d(1200,#250);
+     transform: rotate(-6deg);
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    display: flex;
+    height: 0vmax;
+    letter-spacing: 1.5px;
+
+}
+    
